@@ -1,0 +1,130 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Add a background image */
+body {
+  background-image: url('https://source.unsplash.com/1600x900/?finance,interest');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* App container styles */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  background-image: url(https://cdn.corporatefinanceinstitute.com/assets/finance-definition.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Inner container */
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* Simple interest display box */
+.con {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Input fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.btn-primary {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button.btn-outline-primary {
+  background-color: transparent;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Error messages */
+.text-danger {
+  color: #f44336;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
